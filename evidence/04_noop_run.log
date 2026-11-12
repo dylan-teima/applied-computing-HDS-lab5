@@ -1,0 +1,5 @@
+$ python -m snakemake --cores 2 --printshellcmds
+Assuming unrestricted shared filesystem usage.
+host: Dylans-MacBook-Air-2.local
+Building DAG of jobs...
+Nothing to be done (all requested files are present and up to date).

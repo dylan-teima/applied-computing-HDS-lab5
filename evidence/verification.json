@@ -1,0 +1,54 @@
+{
+  "change": {
+    "sample_id": "S0001",
+    "old_glucose_value": "145.9",
+    "new_glucose_value": "111.1"
+  },
+  "before": {
+    "outputs/cleaned_samples.csv": {
+      "sha256": "2a4f27e3df9451d234d693d0ea22024af898a3502f262e45dc531d06549b4234",
+      "mtime_ns": 1794457330779222000
+    },
+    "outputs/combined_features.csv": {
+      "sha256": "f5095ff3cd32ebe75800a9f88c97f220eef379d8b2ebb4a67d915f4c645bc4c4",
+      "mtime_ns": 1794457331091600000
+    },
+    "outputs/patient_features.csv": {
+      "sha256": "e9e80d5bbcc0437f57155587f9e437b8861fc7380d899ef199ad134ad4d7b7e0",
+      "mtime_ns": 1794457331056856000
+    },
+    "outputs/report.html": {
+      "sha256": "9926c4ce8a2cffe7748cfecc3d03a97cdb5cf7bcc1b4050548822d794fc435c0",
+      "mtime_ns": 1794457331155189000
+    },
+    "outputs/summary.txt": {
+      "sha256": "15fd8f74278746bdb10e4382b566fb254c54d32c22bce89299fd4862f625eb39",
+      "mtime_ns": 1794457331155144000
+    }
+  },
+  "after_partial": {
+    "outputs/cleaned_samples.csv": {
+      "sha256": "e121ecb7743b30ab014f89b8a43a2923f9ba61626879b6acb817a987b6715545",
+      "mtime_ns": 1794457331465995000
+    },
+    "outputs/combined_features.csv": {
+      "sha256": "9111b6ea3949aa3c9fdc6ad7642936d5e1fca3500f886268e67156d71c67bd19",
+      "mtime_ns": 1794457331496920000
+    },
+    "outputs/patient_features.csv": {
+      "sha256": "e9e80d5bbcc0437f57155587f9e437b8861fc7380d899ef199ad134ad4d7b7e0",
+      "mtime_ns": 1794457331056856000
+    },
+    "outputs/report.html": {
+      "sha256": "9926c4ce8a2cffe7748cfecc3d03a97cdb5cf7bcc1b4050548822d794fc435c0",
+      "mtime_ns": 1794457331536387000
+    },
+    "outputs/summary.txt": {
+      "sha256": "15fd8f74278746bdb10e4382b566fb254c54d32c22bce89299fd4862f625eb39",
+      "mtime_ns": 1794457331536347000
+    }
+  },
+  "restored_outputs_match_clean_run": true,
+  "raw_sha256": "7cddee83b693c6c7a4effd6c7276bf031ed2eeb8592ea3f37d87792f41d6e33c",
+  "noop_outputs_unchanged": true
+}

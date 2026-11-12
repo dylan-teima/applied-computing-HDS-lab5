@@ -1,0 +1,61 @@
+sample_id_raw,patient_name_raw,dob_raw,sex_raw,enrollment_site_raw,glucose_value_raw,glucose_unit_raw,notes_raw,sample_id,dob,dob_parse_status,sex,enrollment_site,glucose_mg_dl,glucose_flag,glucose_qc
+S0001,A. Nguyen,07/09/1962,F,siteB,145.9,mg/dL,,S0001,1962-07-09,parsed_by_rule,Female,Site B,145.9,,ok
+S0002,T. Patel,12/16/1974,Male,Site  C,146.1,MG/DL,,S0002,1974-12-16,parsed_by_rule,Male,Site C,146.1,,ok
+s-0003,R. Martinez,11.24.53,F,Site B,84.2,MG/DL,,S0003,2053-11-24,parsed_by_rule,Female,Site B,84.2,,ok
+S0004,A. Patel,1957-02-27,F,Site B,120.0,MG/DL,,S0004,1957-02-27,parsed_by_rule,Female,Site B,120.0,,ok
+S0005,B. Martinez,1997-12-02,Male,Site B,138.3,mg/dl,,S0005,1997-12-02,parsed_by_rule,Male,Site B,138.3,,ok
+s-0006,R. Kim,05-Dec-1968,Female,Site  C,159.9,mmol/L,,S0006,1968-12-05,parsed_by_rule,Female,Site C,2881.1,,review_unit_or_value
+S0007,T. Martinez,1969-09-04,unknown,Site A,206.0,mg/dL,,S0007,1969-09-04,parsed_by_rule,Unknown,Site A,206.0,,ok
+S0008,K. Davis,08/20/1999,F,Site  C,229.3,MG/DL,,S0008,1999-08-20,parsed_by_rule,Female,Site C,229.3,,ok
+s-0009,S. Davis,07/19/1995,m,Site C ,185.0,mg/dl,,S0009,1995-07-19,parsed_by_rule,Male,Site C,185.0,,ok
+S0010,A. Martinez,10/01/1951,f,Site C ,215.2,mg/dl,re-draw requested,S0010,1951-10-01,parsed_by_rule,Female,Site C,215.2,,ok
+S0011,B. Davis,07.09.61,Male,SITE-A,165.0,mmol/L,,S0011,2061-07-09,parsed_by_rule,Male,Site A,2973.0,,review_unit_or_value
+S0012,T. Johnson,06.07.96,,site_a,110.4,MG/DL,re-draw requested,S0012,1996-06-07,parsed_by_rule,Unknown,Site A,110.4,,ok
+S0013,A. Patel,26-Oct-1952,F,siteB,112.8,mmol/L,,S0013,1952-10-26,parsed_by_rule,Female,Site B,2032.5,,review_unit_or_value
+S0014,K. Kim,09.12.58,f,Site B,144.0,mg/dL,,S0014,2058-09-12,parsed_by_rule,Female,Site B,144.0,,ok
+S0015,B. Patel,02.11.98,Male,Site B,103.0,mmol/L,,S0015,1998-02-11,parsed_by_rule,Male,Site B,1855.9,,review_unit_or_value
+S0016,A. Davis,1958-05-15,,Site B,157.4,mg/dl,,S0016,1958-05-15,parsed_by_rule,Unknown,Site B,157.4,,ok
+S0017,K. Nguyen,07.16.15,,site_a,123.4,mg/dL,,S0017,2015-07-16,parsed_by_rule,Unknown,Site A,123.4,,ok
+S0018,J. Smith,1957-03-10,F,siteB,82.2,mg/dl,,S0018,1957-03-10,parsed_by_rule,Female,Site B,82.2,,ok
+s-0019,B. Kim,16-Sep-2000,m,site_a,190.6,MG/DL,,S0019,2000-09-16,parsed_by_rule,Male,Site A,190.6,,ok
+S0020,B. Smith,07/05/2000,F,siteB,108.4,MG/DL,,S0020,2000-07-05,parsed_by_rule,Female,Site B,108.4,,ok
+S0021,K. Davis,11/16/2004,m,Site  C,88.6,mg/dl,,S0021,2004-11-16,parsed_by_rule,Male,Site C,88.6,,ok
+S0022,M. Johnson,25-Nov-2006,,SITE-A,233.0,mg/dL,,S0022,2006-11-25,parsed_by_rule,Unknown,Site A,233.0,,ok
+S0023,S. Lee,06.30.99,M,Site A,83.5,mg/dl,,S0023,1999-06-30,parsed_by_rule,Male,Site A,83.5,,ok
+S0024,S. Johnson,31-Jul-1953,Female,Site  C,114.9,mg/dL,,S0024,1953-07-31,parsed_by_rule,Female,Site C,114.9,,ok
+S0025,M. Lee,11.19.65,M,site_a,202.6,MG/DL,,S0025,2065-11-19,parsed_by_rule,Male,Site A,202.6,,ok
+S0026,J. Garcia,06.22.53,Female,site_a,217.0,mmol/L,,S0026,2053-06-22,parsed_by_rule,Female,Site A,3909.9,,review_unit_or_value
+S0027,T. Johnson,24-Mar-1956,f,Site  C,161.7,MG/DL,,S0027,1956-03-24,parsed_by_rule,Female,Site C,161.7,,ok
+S0028,S. Smith,26-Dec-1988,f,Site B,179.1,mg/dL,,S0028,1988-12-26,parsed_by_rule,Female,Site B,179.1,,ok
+s-0029,M. Johnson,04-Aug-2009,f,Site  C,222.6,MG/DL,,S0029,2009-08-04,parsed_by_rule,Female,Site C,222.6,,ok
+S0030,M. Kim,1984-01-06,m,Site B,168.6,mg/dL,,S0030,1984-01-06,parsed_by_rule,Male,Site B,168.6,,ok
+S0031,K. Brown,11.11.95,Male,Site  C,85.3,MG/DL,,S0031,1995-11-11,parsed_by_rule,Male,Site C,85.3,,ok
+S0032,J. SMITH,08/17/1992,unknown,Site B,229.5,mg/dl,,S0032,1992-08-17,parsed_by_rule,Unknown,Site B,229.5,,ok
+S0033,B. Kim,06.07.12,M,siteB,114.9,mg/dL,,S0033,2012-06-07,parsed_by_rule,Male,Site B,114.9,,ok
+S0034,K. Martinez,04.15.95,unknown,site_a,203.9,mmol/L,,S0034,1995-04-15,parsed_by_rule,Unknown,Site A,3673.9,,review_unit_or_value
+S0035,K. Patel,13-Dec-1956,Female,SITE-A,130.5,mg/dL,,S0035,1956-12-13,parsed_by_rule,Female,Site A,130.5,,ok
+s-0036,T. Johnson,04/21/1987,,Site C ,145.6,mg/dL,,S0036,1987-04-21,parsed_by_rule,Unknown,Site C,145.6,,ok
+S0037,T. Kim,2015-11-28,unknown,site_a,119.1,mmol/L,re-draw requested,S0037,2015-11-28,parsed_by_rule,Unknown,Site A,2146.0,,review_unit_or_value
+S0038,K. Lee,12/02/1997,U,siteB,171.6,mg/dL,,S0038,1997-12-02,parsed_by_rule,Unknown,Site B,171.6,,ok
+S0039,R. Patel,04.12.80,m,Site C ,241.2*,mmol/L,,S0039,1980-04-12,parsed_by_rule,Male,Site C,4346.0,*,review_unit_or_value
+S0040,R. Patel,06/21/2008,M,site_a,105.9,mg/dL,,S0040,2008-06-21,parsed_by_rule,Male,Site A,105.9,,ok
+S0041,K. Nguyen,01/20/1965,Male,SITE-A,89.5,mg/dL,,S0041,1965-01-20,parsed_by_rule,Male,Site A,89.5,,ok
+S0042,M. Garcia,2006-04-10,F,Site  C,209.0*,mg/dL,,S0042,2006-04-10,parsed_by_rule,Female,Site C,209.0,*,ok
+S0043,B. Davis,02.19.51,unknown,Site A,148.0,MG/DL,,S0043,2051-02-19,parsed_by_rule,Unknown,Site A,148.0,,ok
+S0044,S. Martinez,04.13.98,unknown,Site B,218.6,MG/DL,,S0044,1998-04-13,parsed_by_rule,Unknown,Site B,218.6,,ok
+S0045,K. Martinez,01-Jan-1984,M,Site B,223.2,mg/dl,,S0045,1984-01-01,parsed_by_rule,Male,Site B,223.2,,ok
+S0046,S. DAVIS,02/21/1967,Female,Site  C,143.2,mg/dl,,S0046,1967-02-21,parsed_by_rule,Female,Site C,143.2,,ok
+s-0047,M. Kim,21-Jun-1977,unknown,siteB,165.6,mmol/L,,S0047,1977-06-21,parsed_by_rule,Unknown,Site B,2983.8,,review_unit_or_value
+S0048,M. Garcia,04/23/1978,Male,site_a,108.9,mmol/L,,S0048,1978-04-23,parsed_by_rule,Male,Site A,1962.2,,review_unit_or_value
+S0049,M. Nguyen,05-Feb-1966,M,Site  C,166.1,MG/DL,re-draw requested,S0049,1966-02-05,parsed_by_rule,Male,Site C,166.1,,ok
+S0050,K. Garcia,02-Jul-2001,unknown,Site B,149.3,mg/dl,,S0050,2001-07-02,parsed_by_rule,Unknown,Site B,149.3,,ok
+s-0051,K. Garcia,08/02/2011,Male,site_a,216.0,MG/DL,,S0051,2011-08-02,parsed_by_rule,Male,Site A,216.0,,ok
+S0052,M. Davis,20-Sep-1989,U,SITE-A,172.4,mg/dL,,S0052,1989-09-20,parsed_by_rule,Unknown,Site A,172.4,,ok
+S0053,B. Lee,07/10/1999,Male,Site A,143.5,mmol/L,,S0053,1999-07-10,parsed_by_rule,Male,Site A,2585.6,,review_unit_or_value
+S0054,M. Nguyen,2006-01-28,U,Site A,168.0,mg/dl,,S0054,2006-01-28,parsed_by_rule,Unknown,Site A,168.0,,ok
+S0055,S. Brown,14-Oct-2011,U,SITE-A,160.1,mmol/L,,S0055,2011-10-14,parsed_by_rule,Unknown,Site A,2884.7,,review_unit_or_value
+S0056,A. Garcia,06/30/2010,m,siteB,77.2,mg/dl,,S0056,2010-06-30,parsed_by_rule,Male,Site B,77.2,,ok
+S0057,K. Garcia,20-Aug-1986,f,Site  C,88.8,mg/dl,,S0057,1986-08-20,parsed_by_rule,Female,Site C,88.8,,ok
+S0058,A. Brown,23-Aug-1972,F,Site C ,142.8,mg/dL,,S0058,1972-08-23,parsed_by_rule,Female,Site C,142.8,,ok
+S0059,K. Brown,06-Apr-1968,Male,SITE-A,148.9,mmol/L,,S0059,1968-04-06,parsed_by_rule,Male,Site A,2682.9,,review_unit_or_value
+S0060,A. Davis,02/27/1970,unknown,Site A,186.6,mg/dl,,S0060,1970-02-27,parsed_by_rule,Unknown,Site A,186.6,,ok

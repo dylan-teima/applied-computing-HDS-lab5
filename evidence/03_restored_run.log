@@ -1,0 +1,93 @@
+$ python -m snakemake --cores 2 --printshellcmds
+Assuming unrestricted shared filesystem usage.
+host: Dylans-MacBook-Air-2.local
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Job stats:
+job              count
+-------------  -------
+all                  1
+clean_samples        1
+combine              1
+report               1
+total                4
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 11 23:22:11 2026]
+localrule clean_samples:
+    input: data/raw/lab3-messy-data/messy_samples.csv, scripts/clean_samples.py
+    output: outputs/cleaned_samples.csv
+    jobid: 2
+    reason: Updated input files: data/raw/lab3-messy-data/messy_samples.csv
+    resources: tmpdir=/var/folders/v_/jy2gbfg53zl3gp0rr5g_h1lw0000gn/T
+
+'/Users/dylanteima/Desktop/Fall 2026/Applied Computing in HDS/My-Course-Documents/labs/lab5/applied-computing-HDS-lab5/.venv/bin/python' scripts/clean_samples.py data/raw/lab3-messy-data/messy_samples.csv outputs/cleaned_samples.csv
+Cleaned 60 samples
+[Wed Nov 11 23:22:11 2026]
+Finished job 2.
+1 of 4 steps (25%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 11 23:22:11 2026]
+localrule combine:
+    input: outputs/cleaned_samples.csv, outputs/patient_features.csv, scripts/combine.py
+    output: outputs/combined_features.csv
+    jobid: 1
+    reason: Input files updated by another job: outputs/cleaned_samples.csv
+    resources: tmpdir=/var/folders/v_/jy2gbfg53zl3gp0rr5g_h1lw0000gn/T
+
+'/Users/dylanteima/Desktop/Fall 2026/Applied Computing in HDS/My-Course-Documents/labs/lab5/applied-computing-HDS-lab5/.venv/bin/python' scripts/combine.py outputs/cleaned_samples.csv outputs/patient_features.csv outputs/combined_features.csv
+Combined 626 source-labeled records
+[Wed Nov 11 23:22:11 2026]
+Finished job 1.
+2 of 4 steps (50%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 11 23:22:11 2026]
+localrule report:
+    input: outputs/combined_features.csv, scripts/report.py
+    output: outputs/summary.txt, outputs/report.html
+    jobid: 4
+    reason: Input files updated by another job: outputs/combined_features.csv
+    resources: tmpdir=/var/folders/v_/jy2gbfg53zl3gp0rr5g_h1lw0000gn/T
+
+'/Users/dylanteima/Desktop/Fall 2026/Applied Computing in HDS/My-Course-Documents/labs/lab5/applied-computing-HDS-lab5/.venv/bin/python' scripts/report.py outputs/combined_features.csv outputs/summary.txt outputs/report.html
+Lab 5 workflow summary
+Combined records: 626; Lab 3 samples: 60; Lab 4 patients: 566.
+Glucose QC counts: {'ok': 47, 'review_unit_or_value': 13}.
+Median glucose among QC-ok samples (n=47): 148.0 mg/dL.
+Patients missing stage: 54.
+TP53: 287/566 patients with a recorded non-Silent mutation (50.7%).
+KRAS: 168/566 patients with a recorded non-Silent mutation (29.7%).
+EGFR: 69/566 patients with a recorded non-Silent mutation (12.2%).
+STK11: 74/566 patients with a recorded non-Silent mutation (13.1%).
+KEAP1: 102/566 patients with a recorded non-Silent mutation (18.0%).
+The datasets are unrelated: rows are stacked with source labels, not matched across cohorts.
+Blank cells mean missing or not applicable; gene zeros mean no eligible recorded mutation.
+Counts describe this dataset, not population prevalence. No clinical inference is made.
+DOB conventions follow Lab 3 (dot dates MM.DD.YY); ambiguous dates require source confirmation.
+Glucose uses recorded units literally; implausible values remain flagged and are excluded from the QC-ok median.
+
+[Wed Nov 11 23:22:11 2026]
+Finished job 4.
+3 of 4 steps (75%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Nov 11 23:22:11 2026]
+localrule all:
+    input: outputs/combined_features.csv, outputs/summary.txt, outputs/report.html
+    jobid: 0
+    reason: Input files updated by another job: outputs/combined_features.csv, outputs/report.html, outputs/summary.txt
+    resources: tmpdir=/var/folders/v_/jy2gbfg53zl3gp0rr5g_h1lw0000gn/T
+
+[Wed Nov 11 23:22:11 2026]
+Finished job 0.
+4 of 4 steps (100%) done
+Complete log: .snakemake/log/2026-11-11T232211.799088.snakemake.log
